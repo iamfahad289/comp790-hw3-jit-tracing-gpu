@@ -1,0 +1,159 @@
+function,broken_status,fixed_status,explain_summary
+problem1,compiled,compiled,"Graph Count: 2
+Graph Break Count: 1
+Op Count: 2
+Break Reasons:
+  Break Reason 1:
+    Reason: generic_jump TensorVariable()
+    User Stack:
+      <FrameSummary file /tmp/ipykernel_802/1739724488.py, line 2 in problem1>
+Ops per Graph:
+  Ops 1:
+    <built-in function gt>
+  Ops 2:
+    <built-in function truediv>
+Out Guards:
+  Guard 1:
+    Name: ''
+    Source: shape_env
+    Create Function: SHAPE_ENV
+    Guard Types: None
+    Code List: None
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 2:
+    Name: ''
+    Source: global
+    Create Function: DETERMINISTIC_ALGORITHMS
+    Guard Types: None
+    Code List: None
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 3:
+    Name: ''
+    Source: global
+    Create Function: GRAD_MODE
+    Guard Types: None
+    Code List: None
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 4:
+    Name: ''
+    Source: global
+    Create Function: DEFAULT_DEVICE
+    Guard Types: ['DEFAULT_DEVICE']
+    Code List: ['utils_device.CURRENT_DEVICE == None']
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 5:
+    Name: ''
+    Source: global
+    Create Function: GLOBAL_STATE
+    Guard Types: None
+    Code List: "
+problem2,compiled,compiled,"Graph Count: 1
+Graph Break Count: 0
+Op Count: 1
+Break Reasons:
+Ops per Graph:
+  Ops 1:
+    <built-in function mul>
+Out Guards:
+  Guard 1:
+    Name: ''
+    Source: shape_env
+    Create Function: SHAPE_ENV
+    Guard Types: None
+    Code List: None
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 2:
+    Name: ''
+    Source: global
+    Create Function: DETERMINISTIC_ALGORITHMS
+    Guard Types: None
+    Code List: None
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 3:
+    Name: ''
+    Source: global
+    Create Function: GRAD_MODE
+    Guard Types: None
+    Code List: None
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 4:
+    Name: ''
+    Source: global
+    Create Function: DEFAULT_DEVICE
+    Guard Types: ['DEFAULT_DEVICE']
+    Code List: ['utils_device.CURRENT_DEVICE == None']
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 5:
+    Name: ''
+    Source: global
+    Create Function: GLOBAL_STATE
+    Guard Types: None
+    Code List: None
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 6:
+    Name: ''
+    Source: global
+    Create Function: TORCH_FUNCTION_STATE
+    Guard Types: None
+    Code List: None
+    Ob"
+problem3,compiled,compiled,"Graph Count: 1
+Graph Break Count: 0
+Op Count: 20
+Break Reasons:
+Ops per Graph:
+  Ops 1:
+    <built-in function pow>
+    <built-in function add>
+    <built-in function pow>
+    <built-in function iadd>
+    <built-in function pow>
+    <built-in function iadd>
+    <built-in function pow>
+    <built-in function iadd>
+    <built-in function pow>
+    <built-in function iadd>
+    <built-in function pow>
+    <built-in function iadd>
+    <built-in function pow>
+    <built-in function iadd>
+    <built-in function pow>
+    <built-in function iadd>
+    <built-in function pow>
+    <built-in function iadd>
+    <built-in function pow>
+    <built-in function iadd>
+Out Guards:
+  Guard 1:
+    Name: ''
+    Source: shape_env
+    Create Function: SHAPE_ENV
+    Guard Types: None
+    Code List: None
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 2:
+    Name: ''
+    Source: global
+    Create Function: DETERMINISTIC_ALGORITHMS
+    Guard Types: None
+    Code List: None
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 3:
+    Name: ''
+    Source: global
+    Create Function: GRAD_MODE
+    Guard Types: None
+    Code List: None
+    Object Weakref: None
+    Guarded Class Weakref:"
