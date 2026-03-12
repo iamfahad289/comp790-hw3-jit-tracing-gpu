@@ -1,0 +1,4 @@
+version,time_s
+Version A eager loop,2.098479802000005
+Version B JIT first call,20.727351158000147
+Version B JIT cached,0.037121283999946776
