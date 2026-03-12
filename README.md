@@ -32,10 +32,30 @@ This repository includes:
 ## Repository Structure
 
 ```text
-hw3-jit-tracing-gpu/
-├── jax_jit_analysis.ipynb
-├── torch_compile_analysis.ipynb
 ├── README.md
-├── requirements.txt
-├── report.pdf
-└── figures/
+├── jax_jit_analysis/
+│   ├── jax_jit_analysis.ipynb
+│   ├── figures/
+│   │   ├── jax_part1_execution_time.png
+│   │   ├── jax_part2_shape_specialization.png
+│   │   └── jax_part3_fusion_timing.png
+│   ├── results/
+│   │   ├── jax_part1_results.csv
+│   │   ├── jax_part2_jaxpr_text.csv
+│   │   ├── jax_part2_shape_specialization.csv
+│   │   ├── jax_part3_fusion_timing.csv
+│   │   ├── jax_part3_hlo.txt
+│   │   └── jax_part3_profiler_summary.json
+│   └── sample_data/
+├── torch_compile_analysis/
+│   ├── torch_compile_analysis.ipynb
+│   ├── figures/
+│   │   └── torch_part1_backend_comparison.png
+│   ├── results/
+│   │   ├── torch_part1_backend_results.csv
+│   │   ├── torch_part2_debugging_results.csv
+│   │   ├── torch_part2_dynamo_explain.txt
+│   │   ├── torch_part3_dynamo_explain.txt
+│   │   └── torch_part3_fx_graph.txt
+│   └── sample_data/
+└── report.pdf
