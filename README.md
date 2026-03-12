@@ -1,9 +1,8 @@
 # Homework 3: JIT Compilation, Tracing, and GPU Performance Analysis
 
-**Course:** CompSci 790  
+**Course:** CompSci 790 
 **Assignment:** Homework 3  
-**Author:** Muhammad Fahad  
-**Institution:** University of Wisconsin–Milwaukee  
+Muhammad Fahad  
 
 ---
 
