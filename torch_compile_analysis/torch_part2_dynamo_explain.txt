@@ -1,0 +1,355 @@
+================================================================================
+problem1
+================================================================================
+Graph Count: 2
+Graph Break Count: 1
+Op Count: 2
+Break Reasons:
+  Break Reason 1:
+    Reason: generic_jump TensorVariable()
+    User Stack:
+      <FrameSummary file /tmp/ipykernel_802/1739724488.py, line 2 in problem1>
+Ops per Graph:
+  Ops 1:
+    <built-in function gt>
+  Ops 2:
+    <built-in function truediv>
+Out Guards:
+  Guard 1:
+    Name: ''
+    Source: shape_env
+    Create Function: SHAPE_ENV
+    Guard Types: None
+    Code List: None
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 2:
+    Name: ''
+    Source: global
+    Create Function: DETERMINISTIC_ALGORITHMS
+    Guard Types: None
+    Code List: None
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 3:
+    Name: ''
+    Source: global
+    Create Function: GRAD_MODE
+    Guard Types: None
+    Code List: None
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 4:
+    Name: ''
+    Source: global
+    Create Function: DEFAULT_DEVICE
+    Guard Types: ['DEFAULT_DEVICE']
+    Code List: ['utils_device.CURRENT_DEVICE == None']
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 5:
+    Name: ''
+    Source: global
+    Create Function: GLOBAL_STATE
+    Guard Types: None
+    Code List: None
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 6:
+    Name: ''
+    Source: global
+    Create Function: TORCH_FUNCTION_STATE
+    Guard Types: None
+    Code List: None
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 7:
+    Name: ''
+    Source: global
+    Create Function: AUTOGRAD_SAVED_TENSORS_HOOKS
+    Guard Types: ['AUTOGRAD_SAVED_TENSORS_HOOKS']
+    Code List: ['torch._functorch.aot_autograd.utils.top_saved_tensors_hooks ids == None']
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 8:
+    Name: "L['x']"
+    Source: local
+    Create Function: TENSOR_MATCH
+    Guard Types: ['TENSOR_MATCH']
+    Code List: ["hasattr(L['x'], '_dynamo_dynamic_indices') == False"]
+    Object Weakref: <weakref at 0x7bce74221bc0; to 'Tensor' at 0x7bce74837980>
+    Guarded Class Weakref: <weakref at 0x7bcfb6bc3740; to 'torch._C._TensorMeta' at 0x199397b0 (Tensor)>
+  Guard 9:
+    Name: ''
+    Source: shape_env
+    Create Function: SHAPE_ENV
+    Guard Types: None
+    Code List: None
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 10:
+    Name: ''
+    Source: global
+    Create Function: DETERMINISTIC_ALGORITHMS
+    Guard Types: None
+    Code List: None
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 11:
+    Name: ''
+    Source: global
+    Create Function: GRAD_MODE
+    Guard Types: None
+    Code List: None
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 12:
+    Name: ''
+    Source: global
+    Create Function: DEFAULT_DEVICE
+    Guard Types: ['DEFAULT_DEVICE']
+    Code List: ['utils_device.CURRENT_DEVICE == None']
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 13:
+    Name: ''
+    Source: global
+    Create Function: GLOBAL_STATE
+    Guard Types: None
+    Code List: None
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 14:
+    Name: ''
+    Source: global
+    Create Function: TORCH_FUNCTION_STATE
+    Guard Types: None
+    Code List: None
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 15:
+    Name: ''
+    Source: global
+    Create Function: AUTOGRAD_SAVED_TENSORS_HOOKS
+    Guard Types: ['AUTOGRAD_SAVED_TENSORS_HOOKS']
+    Code List: ['torch._functorch.aot_autograd.utils.top_saved_tensors_hooks ids == None']
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 16:
+    Name: "L['x']"
+    Source: local
+    Create Function: TENSOR_MATCH
+    Guard Types: ['TENSOR_MATCH']
+    Code List: ["hasattr(L['x'], '_dynamo_dynamic_indices') == False"]
+    Object Weakref: <weakref at 0x7bce74221bc0; to 'Tensor' at 0x7bce74837980>
+    Guarded Class Weakref: <weakref at 0x7bcfb6bc3740; to 'torch._C._TensorMeta' at 0x199397b0 (Tensor)>
+Compile Times: TorchDynamo compilation metrics:
+Function                        Runtimes (s)
+------------------------------  --------------
+_compile.compile_inner          0.0486, 0.0405
+compile_attempt_0               0.0205, 0.0101
+bytecode_tracing                0.0073, 0.0032
+OutputGraph.call_user_compiler  0.0003, 0.0002
+build_guards                    0.0261, 0.0286
+gc                              0.0006, 0.0004
+
+
+================================================================================
+problem2
+================================================================================
+Graph Count: 1
+Graph Break Count: 0
+Op Count: 1
+Break Reasons:
+Ops per Graph:
+  Ops 1:
+    <built-in function mul>
+Out Guards:
+  Guard 1:
+    Name: ''
+    Source: shape_env
+    Create Function: SHAPE_ENV
+    Guard Types: None
+    Code List: None
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 2:
+    Name: ''
+    Source: global
+    Create Function: DETERMINISTIC_ALGORITHMS
+    Guard Types: None
+    Code List: None
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 3:
+    Name: ''
+    Source: global
+    Create Function: GRAD_MODE
+    Guard Types: None
+    Code List: None
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 4:
+    Name: ''
+    Source: global
+    Create Function: DEFAULT_DEVICE
+    Guard Types: ['DEFAULT_DEVICE']
+    Code List: ['utils_device.CURRENT_DEVICE == None']
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 5:
+    Name: ''
+    Source: global
+    Create Function: GLOBAL_STATE
+    Guard Types: None
+    Code List: None
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 6:
+    Name: ''
+    Source: global
+    Create Function: TORCH_FUNCTION_STATE
+    Guard Types: None
+    Code List: None
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 7:
+    Name: ''
+    Source: global
+    Create Function: AUTOGRAD_SAVED_TENSORS_HOOKS
+    Guard Types: ['AUTOGRAD_SAVED_TENSORS_HOOKS']
+    Code List: ['torch._functorch.aot_autograd.utils.top_saved_tensors_hooks ids == None']
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 8:
+    Name: "L['x']"
+    Source: local
+    Create Function: TENSOR_MATCH
+    Guard Types: ['TENSOR_MATCH']
+    Code List: ["hasattr(L['x'], '_dynamo_dynamic_indices') == False"]
+    Object Weakref: <weakref at 0x7bce74221bc0; to 'Tensor' at 0x7bce74837980>
+    Guarded Class Weakref: <weakref at 0x7bcfb6bc3740; to 'torch._C._TensorMeta' at 0x199397b0 (Tensor)>
+Compile Times: TorchDynamo compilation metrics:
+Function                          Runtimes (s)
+------------------------------  --------------
+_compile.compile_inner                  0.0381
+compile_attempt_0                       0.0106
+bytecode_tracing                        0.0035
+OutputGraph.call_user_compiler          0.0002
+build_guards                            0.0257
+gc                                      0.0005
+
+
+================================================================================
+problem3
+================================================================================
+Graph Count: 1
+Graph Break Count: 0
+Op Count: 20
+Break Reasons:
+Ops per Graph:
+  Ops 1:
+    <built-in function pow>
+    <built-in function add>
+    <built-in function pow>
+    <built-in function iadd>
+    <built-in function pow>
+    <built-in function iadd>
+    <built-in function pow>
+    <built-in function iadd>
+    <built-in function pow>
+    <built-in function iadd>
+    <built-in function pow>
+    <built-in function iadd>
+    <built-in function pow>
+    <built-in function iadd>
+    <built-in function pow>
+    <built-in function iadd>
+    <built-in function pow>
+    <built-in function iadd>
+    <built-in function pow>
+    <built-in function iadd>
+Out Guards:
+  Guard 1:
+    Name: ''
+    Source: shape_env
+    Create Function: SHAPE_ENV
+    Guard Types: None
+    Code List: None
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 2:
+    Name: ''
+    Source: global
+    Create Function: DETERMINISTIC_ALGORITHMS
+    Guard Types: None
+    Code List: None
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 3:
+    Name: ''
+    Source: global
+    Create Function: GRAD_MODE
+    Guard Types: None
+    Code List: None
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 4:
+    Name: ''
+    Source: global
+    Create Function: DEFAULT_DEVICE
+    Guard Types: ['DEFAULT_DEVICE']
+    Code List: ['utils_device.CURRENT_DEVICE == None']
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 5:
+    Name: ''
+    Source: global
+    Create Function: GLOBAL_STATE
+    Guard Types: None
+    Code List: None
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 6:
+    Name: ''
+    Source: global
+    Create Function: TORCH_FUNCTION_STATE
+    Guard Types: None
+    Code List: None
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 7:
+    Name: ''
+    Source: global
+    Create Function: AUTOGRAD_SAVED_TENSORS_HOOKS
+    Guard Types: ['AUTOGRAD_SAVED_TENSORS_HOOKS']
+    Code List: ['torch._functorch.aot_autograd.utils.top_saved_tensors_hooks ids == None']
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 8:
+    Name: "G['__builtins_dict___68']['range']"
+    Source: global
+    Create Function: BUILTIN_MATCH
+    Guard Types: ['ID_MATCH']
+    Code List: ["___check_obj_id(G['__builtins_dict___68']['range'], 10570112), type=<class 'range'>"]
+    Object Weakref: <weakref at 0x7bcff1c2fec0; to 'type' at 0xa14980>
+    Guarded Class Weakref: <weakref at 0x7bcff1bdcc20; to 'type' at 0xa22b20 (type)>
+  Guard 9:
+    Name: "L['x']"
+    Source: local
+    Create Function: TENSOR_MATCH
+    Guard Types: ['TENSOR_MATCH']
+    Code List: ["hasattr(L['x'], '_dynamo_dynamic_indices') == False"]
+    Object Weakref: <weakref at 0x7bce74221bc0; to 'Tensor' at 0x7bce74837980>
+    Guarded Class Weakref: <weakref at 0x7bcfb6bc3740; to 'torch._C._TensorMeta' at 0x199397b0 (Tensor)>
+Compile Times: TorchDynamo compilation metrics:
+Function                          Runtimes (s)
+------------------------------  --------------
+_compile.compile_inner                  0.0997
+compile_attempt_0                       0.0607
+bytecode_tracing                        0.0501
+OutputGraph.call_user_compiler          0.0003
+build_guards                            0.0367
+gc                                      0.0007
+
+

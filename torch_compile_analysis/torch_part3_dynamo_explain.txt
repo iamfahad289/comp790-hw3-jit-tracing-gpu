@@ -1,0 +1,162 @@
+Graph Count: 1
+Graph Break Count: 0
+Op Count: 5
+Break Reasons:
+  Break Reason 1:
+    Reason: Failed to trace builtin operator
+  Explanation: Dynamo does not know how to trace builtin operator `print` with argument types ['str'] (has_kwargs False)
+  Hint: Avoid calling builtin `print` with argument types ['str']. Consider using an equivalent alternative function/method to `print`.
+  Hint: If you are attempting to call a logging function (e.g. `print`), you can try adding it to `torch._dynamo.config.reorderable_logging_functions`.
+  Hint: Please report an issue to PyTorch.
+
+  Developer debug context: builtin print [<class 'torch._dynamo.variables.constant.ConstantVariable'>] False
+
+ For more details about this graph break, please visit: https://meta-pytorch.github.io/compile-graph-break-site/gb/gb0059.html
+    User Stack:
+      <FrameSummary file /tmp/ipykernel_802/3401368314.py, line 7 in graph_function>
+Ops per Graph:
+  Ops 1:
+    <built-in function matmul>
+    <function relu at 0x7bce9ea087c0>
+    <built-in function matmul>
+    <built-in function add>
+    <function layer_norm at 0x7bce9ea099e0>
+Out Guards:
+  Guard 1:
+    Name: ''
+    Source: shape_env
+    Create Function: SHAPE_ENV
+    Guard Types: None
+    Code List: None
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 2:
+    Name: ''
+    Source: global
+    Create Function: DETERMINISTIC_ALGORITHMS
+    Guard Types: None
+    Code List: None
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 3:
+    Name: ''
+    Source: global
+    Create Function: GRAD_MODE
+    Guard Types: None
+    Code List: None
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 4:
+    Name: ''
+    Source: global
+    Create Function: DEFAULT_DEVICE
+    Guard Types: ['DEFAULT_DEVICE']
+    Code List: ['utils_device.CURRENT_DEVICE == None']
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 5:
+    Name: ''
+    Source: global
+    Create Function: GLOBAL_STATE
+    Guard Types: None
+    Code List: None
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 6:
+    Name: ''
+    Source: global
+    Create Function: TORCH_FUNCTION_STATE
+    Guard Types: None
+    Code List: None
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 7:
+    Name: ''
+    Source: global
+    Create Function: AUTOGRAD_SAVED_TENSORS_HOOKS
+    Guard Types: ['AUTOGRAD_SAVED_TENSORS_HOOKS']
+    Code List: ['torch._functorch.aot_autograd.utils.top_saved_tensors_hooks ids == None']
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 8:
+    Name: "L['x']"
+    Source: local
+    Create Function: TENSOR_MATCH
+    Guard Types: ['TENSOR_MATCH']
+    Code List: ["hasattr(L['x'], '_dynamo_dynamic_indices') == False"]
+    Object Weakref: <weakref at 0x7bce5ffc9bc0; to 'Tensor' at 0x7bce742ef1b0>
+    Guarded Class Weakref: <weakref at 0x7bcfb6bc3740; to 'torch._C._TensorMeta' at 0x199397b0 (Tensor)>
+  Guard 9:
+    Name: "L['w1']"
+    Source: local
+    Create Function: TENSOR_MATCH
+    Guard Types: ['TENSOR_MATCH']
+    Code List: ["hasattr(L['w1'], '_dynamo_dynamic_indices') == False"]
+    Object Weakref: <weakref at 0x7bce5ffc9710; to 'Tensor' at 0x7bce742efa70>
+    Guarded Class Weakref: <weakref at 0x7bcfb6bc3740; to 'torch._C._TensorMeta' at 0x199397b0 (Tensor)>
+  Guard 10:
+    Name: "G['F']"
+    Source: global
+    Create Function: MODULE_MATCH
+    Guard Types: ['ID_MATCH']
+    Code List: ["___check_obj_id(G['F'], 136127356370384), type=<module 'torch.nn.functional' from '/usr/local/lib/python3.12/dist-packages/torch/nn/functional.py'>"]
+    Object Weakref: <weakref at 0x7bce75e14cc0; to 'module' at 0x7bce9eb87dd0>
+    Guarded Class Weakref: <weakref at 0x7bcff1c2f010; to 'type' at 0xa15a00 (module)>
+  Guard 11:
+    Name: "G['F'].relu"
+    Source: global
+    Create Function: CLOSURE_MATCH
+    Guard Types: None
+    Code List: None
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 12:
+    Name: "L['w2']"
+    Source: local
+    Create Function: TENSOR_MATCH
+    Guard Types: ['TENSOR_MATCH']
+    Code List: ["hasattr(L['w2'], '_dynamo_dynamic_indices') == False"]
+    Object Weakref: <weakref at 0x7bce5ffca390; to 'Tensor' at 0x7bce7432d0e0>
+    Guarded Class Weakref: <weakref at 0x7bcfb6bc3740; to 'torch._C._TensorMeta' at 0x199397b0 (Tensor)>
+  Guard 13:
+    Name: "G['F'].layer_norm"
+    Source: global
+    Create Function: CLOSURE_MATCH
+    Guard Types: None
+    Code List: None
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 14:
+    Name: "L['ln_weight']"
+    Source: local
+    Create Function: TENSOR_MATCH
+    Guard Types: ['TENSOR_MATCH']
+    Code List: ["hasattr(L['ln_weight'], '_dynamo_dynamic_indices') == False"]
+    Object Weakref: <weakref at 0x7bce5ffca7f0; to 'Tensor' at 0x7bce747c9e00>
+    Guarded Class Weakref: <weakref at 0x7bcfb6bc3740; to 'torch._C._TensorMeta' at 0x199397b0 (Tensor)>
+  Guard 15:
+    Name: "L['ln_bias']"
+    Source: local
+    Create Function: TENSOR_MATCH
+    Guard Types: ['TENSOR_MATCH']
+    Code List: ["hasattr(L['ln_bias'], '_dynamo_dynamic_indices') == False"]
+    Object Weakref: <weakref at 0x7bce5ffcaac0; to 'Tensor' at 0x7bce741d1e50>
+    Guarded Class Weakref: <weakref at 0x7bcfb6bc3740; to 'torch._C._TensorMeta' at 0x199397b0 (Tensor)>
+  Guard 16:
+    Name: "G['__builtins_dict___72']['print']"
+    Source: global
+    Create Function: BUILTIN_MATCH
+    Guard Types: ['ID_MATCH']
+    Code List: ["___check_obj_id(G['__builtins_dict___72']['print'], 136133044817488), type=<built-in function print>"]
+    Object Weakref: <weakref at 0x7bce7439f8d0; to 'builtin_function_or_method' at 0x7bcff1c74e50>
+    Guarded Class Weakref: <weakref at 0x7bcff1bfc4a0; to 'type' at 0xa15ee0 (builtin_function_or_method)>
+Compile Times: TorchDynamo compilation metrics:
+Function                        Runtimes (s)
+------------------------------  ----------------------
+_compile.compile_inner          0.1432, 0.0180
+compile_attempt_0               0.0367, 0.0166
+bytecode_tracing                0.0339, 0.0171, 0.0107
+compile_attempt_1               0.0529
+OutputGraph.call_user_compiler  0.0003
+build_guards                    0.0488
+gc                              0.0011, 0.0002
