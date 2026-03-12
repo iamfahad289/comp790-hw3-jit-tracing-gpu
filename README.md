@@ -1,1 +1,41 @@
-# comp790-hw3-jit-tracing-gpu
+# Homework 3: JIT Compilation, Tracing, and GPU Performance Analysis
+
+**Course:** CompSci 790  
+**Assignment:** Homework 3  
+**Author:** Muhammad Fahad  
+**Institution:** University of Wisconsin–Milwaukee  
+
+---
+
+## Overview
+
+This repository contains the complete submission for Homework 3 on JIT compilation, tracing, and GPU performance analysis using **JAX** and **PyTorch**.
+
+The goal of this homework is to study how modern machine learning frameworks optimize computation through tracing and just-in-time compilation, and to evaluate their practical impact on execution time, graph generation, shape specialization, backend behavior, and operator fusion on GPU hardware.
+
+This repository includes:
+
+- `jax_jit_analysis.ipynb`  
+  JAX-based experiments on compilation overhead, shape specialization, and operator fusion
+
+- `torch_compile_analysis.ipynb`  
+  PyTorch-based experiments on `torch.compile`, backend comparison, debugging graph breaks, and computation graph inspection
+
+- `report.pdf`  
+  Final written report summarizing methodology, results, observations, and discussion
+
+- `figures/`  
+  Output plots, screenshots, and visual artifacts used in the report
+
+---
+
+## Repository Structure
+
+```text
+hw3-jit-tracing-gpu/
+├── jax_jit_analysis.ipynb
+├── torch_compile_analysis.ipynb
+├── README.md
+├── requirements.txt
+├── report.pdf
+└── figures/
