@@ -32,30 +32,29 @@ This repository includes:
 ## Repository Structure
 
 ```text
+comp790-hw3-jit-tracing-gpu/
 ├── README.md
 ├── jax_jit_analysis/
-│   ├── jax_jit_analysis.ipynb
-│   ├── figures/
+│   ├── Figures/
 │   │   ├── jax_part1_execution_time.png
-│   │   ├── jax_part2_shape_specialization.png
-│   │   └── jax_part3_fusion_timing.png
-│   ├── results/
 │   │   ├── jax_part1_results.csv
 │   │   ├── jax_part2_jaxpr_text.csv
 │   │   ├── jax_part2_shape_specialization.csv
+│   │   ├── jax_part2_shape_specialization.png
 │   │   ├── jax_part3_fusion_timing.csv
+│   │   ├── jax_part3_fusion_timing.png
 │   │   ├── jax_part3_hlo.txt
 │   │   └── jax_part3_profiler_summary.json
-│   └── sample_data/
+│   ├── Sample_Data/
+│   └── jax_jit_analysis.ipynb
 ├── torch_compile_analysis/
-│   ├── torch_compile_analysis.ipynb
-│   ├── figures/
-│   │   └── torch_part1_backend_comparison.png
-│   ├── results/
+│   ├── Figures/
+│   │   ├── torch_part1_backend_comparison.png
 │   │   ├── torch_part1_backend_results.csv
 │   │   ├── torch_part2_debugging_results.csv
 │   │   ├── torch_part2_dynamo_explain.txt
 │   │   ├── torch_part3_dynamo_explain.txt
 │   │   └── torch_part3_fx_graph.txt
-│   └── sample_data/
+│   ├── Sample_Data/
+│   └── torch_compile_analysis.ipynb
 └── report.pdf
